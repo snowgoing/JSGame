@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: url("backgroundPic.jpg");
+	background: cover;
+}
+#container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.circle {
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+	border: 3px solid #08043E;
+	opacity: .7;	
+}
+
+.hex, .right, .wrong, button {
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #E7E7E7;
+	margin: 60px auto;
+	text-align: center;
+	padding: 15px;
+	font-size: 22px;
+	font-family: Arial;
+	position: relative;
+	opacity: .7;
+}
+.right:before {
+	content: "RIGHT";
+	position: relative;
+	top: -50px;
+	left: 0;
+	color: #E7E7E7;
+}
+.wrong:before {
+	content: "WRONG";
+	position: relative;
+	top: -50px;
+	left: 0;
+	color: #E7E7E7;
+}
+.score {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	width: 100%;
+	height: 85px;
+}
+.hint {
+	display: flex;
+	width: 100%
+}
+button {
+	margin-top: -40px;
+}
+button:hover {
+	color: #E7E7E7;
+	background: black;
+}
+/*.answer {
+	opacity: 1;
+	border: 10px solid yellow;
+	
+}*/
